@@ -7,10 +7,10 @@ Amazon EBSis designed to store data in volumes of a provisioned size attached to
 
 2. Highlight few differences between NoSQL & SQL databases
 Answer:
-- SQL databases are primarily called as Relational Databases (RDBMS); 
+ SQL databases are primarily called as Relational Databases (RDBMS); 
 whereas NoSQL database are primarily called as non-relational or distributed database.
-- SQL databases are table based databases whereas NoSQL databases are document based, key-value pairs.
-- SQL databases have predefined schema whereas NoSQL databases have dynamic schema for unstructured data.
+SQL databases are table based databases whereas NoSQL databases are document based, key-value pairs.
+-SQL databases have predefined schema whereas NoSQL databases have dynamic schema for unstructured databade
 
 3. Highlight few differences between ssh & http protocol
 
@@ -26,21 +26,17 @@ TASK 2:
 Created S3 bucker with vagdevifianl in US East(Ohio) , then created IAM roles in IAM service for s3read and s3 full access. Attach policies accordingly. 
 
 TASK 3:
-Uploaded mysqlsampledatabase.sql file and in EC2 I tried downloaed, but ran into issues
-
+Uploaded mysqlsampledatabase.sql file and in EC2 I tried downloaed, but ran into issue
 
 TASK 4:
 1. cat mysqlsampledatabase.sql  | wc -l
 7929
-
 2. sed 's/mysql/yoursql/g' mysqlsampledatabase.sql > modifiedMysqldatabase.sql
-
 3. grep -E "NULL" mysqlsampledatabase.sql | wc -l
 436
 
 TASK 5:
 2. mysql mariadb.cnws6j952rjn.us-east-2.rds.amazonaws.com m -mariadb -mariadb < mysqlsampledatabase.sql
-
 TASK 6:
 select c.customerName, p.productName 
 from customers c join orders o 
