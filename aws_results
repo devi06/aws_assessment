@@ -32,27 +32,23 @@ TASK 3:
 Uploaded mysqlsampledatabase.sql file and in EC2 I tried downloaed, but ran into issues.
 
 
-TASK 4
-======
+TASK 4:
 
-#1. cat mysqlsampledatabase.sql  | wc -l
+1. cat mysqlsampledatabase.sql  | wc -l
 7929
 
-#2. sed 's/mysql/yoursql/g' mysqlsampledatabase.sql > modifiedMysqldatabase.sql
+2. sed 's/mysql/yoursql/g' mysqlsampledatabase.sql > modifiedMysqldatabase.sql
 
 
-#3. grep -E "NULL" mysqlsampledatabase.sql | wc -l
+3. grep -E "NULL" mysqlsampledatabase.sql | wc -l
 436
 
-TASK 5
-======
+TASK 5:
 
-#2. mysql mariadb.cnws6j952rjn.us-east-2.rds.amazonaws.com m -mariadb -mariadb < mysqlsampledatabase.sql
+2. mysql mariadb.cnws6j952rjn.us-east-2.rds.amazonaws.com m -mariadb -mariadb < mysqlsampledatabase.sql
 
-TASK 6
-======
+TASK 6:
 
-#1. 
 select c.customerName, p.productName 
 from customers c join orders o 
 on o.customerNumber = c.customerNumber 
